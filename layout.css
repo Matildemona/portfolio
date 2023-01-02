@@ -1,0 +1,26 @@
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img1 {
+  background-image: url("girl.png");
+  background-size: cover;
+  aspect-ratio: 1127/1044;
+  width: 976px;
+  margin-top: -239px;
+  margin-right: 50px;
+}
+
+.textbox1 {
+  margin-left: 365px;
+  margin-top: 76px;
+}
+
+.offsetright {
+  margin-left: 140px;
+}
+
+.offsetright2 {
+  margin-left: 316px;
+}

@@ -1,0 +1,97 @@
+/********** RESET **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********** STYLE **********/
+
+body {
+  background-color: #101010;
+}
+
+.indexpage {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+}
+
+/********** HEADER **********/
+
+header {
+  position: sticky;
+  padding: 100px 300px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+/********** TEXT **********/
+h1 {
+  color: #36f3e4;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 8rem;
+}
+h3 {
+  color: #36f3e4;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+}
+
+/*************** Knap ***************/
+.knap a {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #e3eef2;
+}
+
+.knap a:hover {
+  animation: fadelight_kf 5s linear infinite both;
+}
+a {
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+@keyframes fadelight_kf {
+  /*Animation der fader en box shadow ind og ud med alpha
+  Den starter på 20% og fader op til 100% og tilbage ned til 20%*/
+  0% {
+    box-shadow: 0px 0px 39px 11px rgb(54, 243, 228, 0.2);
+  }
+
+  50% {
+    box-shadow: 0px 0px 39px 11px rgb(54, 243, 228);
+  }
+
+  100% {
+    box-shadow: 0px 0px 39px 11px rgb(54, 243, 228, 0.2);
+  }
+}
+
+/*************** GIF ***************/
+.hackertext {
+  margin-left: 523px;
+}
+
+/*************** FOOTER ***************/
+footer {
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  color: rgb(55, 55, 55);
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
