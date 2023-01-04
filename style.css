@@ -15,12 +15,17 @@ img {
 
 body {
   background-color: #101010;
-}
-
-.indexpage {
-  background-image: url("bg.png");
+  color: white;
+  font-family: "IBM Plex Mono", monospace;
+  background-image: url("webp/bg.webp");
   background-repeat: no-repeat;
 }
+
+/*
+.indexpage {
+  background-image: url("webp/bg.webp");
+  background-repeat: no-repeat;
+} */
 
 /********** HEADER **********/
 
@@ -36,15 +41,25 @@ header nav ul {
 }
 
 /********** TEXT **********/
-h1 {
+h1,
+h2,
+h3,
+p {
   color: #36f3e4;
-  font-family: "IBM Plex Mono", monospace;
+}
+h1 {
   font-size: 8rem;
 }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 h3 {
-  color: #36f3e4;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 1.5rem;
+}
+p {
+  color: #e3eef2;
+  font-size: 1rem;
 }
 
 /*************** Knap ***************/
@@ -82,6 +97,10 @@ a {
   }
 }
 
+.grid2_1_1 div a {
+  margin-top: 20px;
+}
+
 /*************** GIF ***************/
 .hackertext {
   margin-left: 523px;
@@ -94,4 +113,9 @@ footer {
   color: rgb(55, 55, 55);
   padding-bottom: 10px;
   font-size: 0.9rem;
+}
+
+/*************** IMG ***************/
+.grid2_1_1 div img {
+  border-radius: 50px;
 }

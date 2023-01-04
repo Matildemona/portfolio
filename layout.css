@@ -1,10 +1,20 @@
+/********** GRID **********/
 .grid_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.grid2_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px 40px;
+  margin: 0 50px 0 50px;
+}
+
+/********** OTHER **********/
 .img1 {
-  background-image: url("girl.png");
+  background-image: url("webp/girl.webp");
   background-size: cover;
   aspect-ratio: 1127/1044;
   width: 976px;
