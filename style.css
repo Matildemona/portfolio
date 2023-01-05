@@ -23,7 +23,7 @@ body {
 
 /* Ret senere */
 main {
-  max-width: 1600px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -31,13 +31,19 @@ main {
 
 header {
   position: sticky;
-  padding: 100px 300px;
+  padding: 20px 10px;
 }
 
 header nav ul {
-  display: flex;
   list-style: none;
-  gap: 60px;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 /********** TEXT **********/
@@ -48,14 +54,14 @@ p {
   color: #36f3e4;
 }
 h1 {
-  font-size: 8rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 p {
   color: #e3eef2;
@@ -70,8 +76,8 @@ p {
   color: black;
   font-size: 1.4rem;
   text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
   text-align: center;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .knap a:hover {
@@ -103,7 +109,9 @@ a {
 
 /*************** GIF ***************/
 .hackertext {
-  margin-left: 523px;
+  margin-left: -135px;
+  width: 361px;
+  height: 550px;
 }
 
 /*************** FOOTER ***************/
@@ -119,4 +127,24 @@ footer {
 /*************** IMG ***************/
 .grid2_1_1 div img {
   border-radius: 50px;
+}
+
+/********** MEDIA QUERY **********/
+@media (min-width: 700px) {
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+  }
+  header {
+    padding: 88px 149px;
+  }
+  li {
+    margin-bottom: 0px;
+  }
+  .hackertext {
+    margin-left: 406px;
+    width: 400px;
+    height: 600px;
+  }
 }

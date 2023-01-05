@@ -1,30 +1,18 @@
 /********** GRID **********/
-.grid_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid2_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 50px 40px;
-  margin: 0 50px 0 50px;
-}
 
 /********** OTHER **********/
 .img1 {
   background-image: url("webp/girl.webp");
   background-size: cover;
-  aspect-ratio: 1127/1044;
-  width: 976px;
-  margin-top: -239px;
-  margin-right: 50px;
+  width: 317px;
+  margin-top: -469px;
+  height: 554px;
+  margin-left: 136px;
 }
 
 .textbox1 {
-  margin-left: 365px;
-  margin-top: 76px;
+  margin-left: 4px;
+  margin-top: 31px;
 }
 
 .offsetright {
@@ -32,5 +20,28 @@
 }
 
 .offsetright2 {
-  margin-left: 316px;
+  margin-left: 274px;
+}
+
+/********** MEDIA QUERY **********/
+@media (min-width: 700px) {
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
+  }
+
+  .grid2_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
+  }
+
+  .img1 {
+    background-image: url("webp/girl.webp");
+    background-size: cover;
+    width: 716px;
+    margin-top: -192px;
+    height: 646px;
+  }
 }
