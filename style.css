@@ -21,11 +21,11 @@ body {
   background-repeat: no-repeat;
 }
 
-/*
-.indexpage {
-  background-image: url("webp/bg.webp");
-  background-repeat: no-repeat;
-} */
+/* Ret senere */
+main {
+  max-width: 1600px;
+  margin-inline: auto;
+}
 
 /********** HEADER **********/
 
@@ -61,24 +61,24 @@ p {
   color: #e3eef2;
   font-size: 1rem;
 }
-
 /*************** Knap ***************/
 .knap a {
   display: inline-block;
   padding: 15px;
   border-radius: 50px;
   background-color: #e3eef2;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
 }
 
 .knap a:hover {
   animation: fadelight_kf 5s linear infinite both;
 }
 a {
-  color: black;
-  font-size: 1.4rem;
-  text-decoration: none;
-  font-family: "IBM Plex Mono", monospace;
-  text-align: center;
+  color: rgb(0, 255, 110);
 }
 
 @keyframes fadelight_kf {
@@ -112,6 +112,7 @@ footer {
   font-family: "IBM Plex Mono", monospace;
   color: rgb(55, 55, 55);
   padding-bottom: 10px;
+  padding-top: 20px;
   font-size: 0.9rem;
 }
 
