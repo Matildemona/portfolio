@@ -113,6 +113,12 @@ a {
   width: 361px;
   height: 550px;
 }
+.hackertext2 {
+  margin-left: -209px;
+  width: 500px;
+  height: 600px;
+  margin-top: -606px;
+}
 
 /*************** FOOTER ***************/
 footer {
@@ -127,6 +133,11 @@ footer {
 /*************** IMG ***************/
 .grid2_1_1 div img {
   border-radius: 50px;
+}
+
+.img_matilde {
+  width: 126%;
+  margin-top: -127px;
 }
 
 /********** MEDIA QUERY **********/
