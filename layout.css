@@ -1,4 +1,13 @@
 /********** GRID **********/
+.grid2_1_1 {
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+}
+
+.grid3_1_1 {
+  padding: 10px;
+}
 
 /********** OTHER **********/
 .img1 {
@@ -21,27 +30,4 @@
 
 .offsetright2 {
   margin-left: 274px;
-}
-
-/********** MEDIA QUERY **********/
-@media (min-width: 700px) {
-  .grid_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 40px;
-  }
-
-  .grid2_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 40px;
-  }
-
-  .img1 {
-    background-image: url("webp/girl.webp");
-    background-size: cover;
-    width: 716px;
-    margin-top: -192px;
-    height: 646px;
-  }
 }

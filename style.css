@@ -130,7 +130,39 @@ footer {
 }
 
 /********** MEDIA QUERY **********/
-@media (min-width: 700px) {
+
+/********** IPAD **********/
+@media (min-width: 800px) {
+  .img1 {
+    width: 357px;
+    margin-top: -211px;
+    height: 625px;
+    margin-left: -14px;
+  }
+  .textbox1 {
+    margin-left: 97px;
+    margin-top: 17px;
+  }
+  .grid_1_1,
+  .grid2_1_1,
+  .grid3_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
+  }
+  .grid3_1_1 {
+    padding: 20px;
+  }
+
+  .hackertext {
+    margin-left: -22px;
+    width: 361px;
+    height: 550px;
+  }
+}
+
+/********** LAPTOP **********/
+@media (min-width: 1000px) {
   header nav ul {
     display: flex;
     list-style: none;
@@ -146,5 +178,12 @@ footer {
     margin-left: 406px;
     width: 400px;
     height: 600px;
+  }
+  .img1 {
+    background-image: url("webp/girl.webp");
+    background-size: cover;
+    width: 716px;
+    margin-top: -192px;
+    height: 646px;
   }
 }
