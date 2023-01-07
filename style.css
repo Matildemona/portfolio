@@ -38,10 +38,6 @@ header nav ul {
   list-style: none;
 }
 
-nav {
-  margin-left: 20px;
-}
-
 li {
   margin-bottom: 10px;
 }
@@ -140,13 +136,44 @@ footer {
   margin-top: -127px;
 }
 
+/********** BURGER MENU PRØVE **********/
+/* burgermenu */
+.toggle-btn {
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #e3eef2;
+  color: black;
+  font-size: 1.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  list-style: none;
+}
+
+.main-menu.shown {
+  display: contents;
+}
+
+.main-menu ul {
+  display: none;
+}
+
+.main-menu.shown ul {
+  border-top: 2px solid #e3eef2;
+  padding-top: 9px;
+  margin-top: 9px;
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: 800px) {
+}
+
 /********** MEDIA QUERY **********/
 
 /********** TABLET **********/
 @media (min-width: 800px) {
-  header {
-    padding: 20px 28px;
-  }
   .img1 {
     width: 357px;
     margin-top: -211px;
@@ -180,11 +207,6 @@ footer {
 
 /********** LAPTOP **********/
 @media (min-width: 1000px) {
-  header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 60px;
-  }
   header {
     padding: 88px 149px;
   }
@@ -235,5 +257,14 @@ footer {
   .grid2_1_1 div:nth-child(12) {
     grid-column: 1/2;
     grid-row: 6/7;
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .main-menu ul {
+    display: contents;
+    display: flex;
+    list-style: none;
+    gap: 60px;
   }
 }
