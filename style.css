@@ -142,8 +142,11 @@ footer {
 
 /********** MEDIA QUERY **********/
 
-/********** IPAD **********/
+/********** TABLET **********/
 @media (min-width: 800px) {
+  header {
+    padding: 20px 28px;
+  }
   .img1 {
     width: 357px;
     margin-top: -211px;
@@ -154,21 +157,24 @@ footer {
     margin-left: 97px;
     margin-top: 17px;
   }
-  .grid_1_1,
-  .grid2_1_1,
-  .grid3_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px 40px;
-  }
-  .grid3_1_1 {
-    padding: 20px;
-  }
-
   .hackertext {
     margin-left: -22px;
     width: 361px;
     height: 550px;
+  }
+
+  /********** GRID **********/
+  .grid3_1_1 {
+    padding: 20px;
+  }
+  .grid2_1_1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
   }
 }
 
@@ -196,5 +202,38 @@ footer {
     width: 716px;
     margin-top: -192px;
     height: 646px;
+  }
+  /********** GRID **********/
+  .grid3_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
+  }
+  /*er dette nødvendigt eller gør den det autormatisk?*/
+  .grid2_1_1 {
+    grid-template-rows: 6fr;
+  }
+  /*jeg rykker rundt på de forksllige div'er, når vi er i laptop mode.
+    nth er et givet tal der defineres i parentes.*/
+  .grid2_1_1 div:nth-child(3) {
+    grid-column: 2/3;
+  }
+  .grid2_1_1 div:nth-child(4) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .grid2_1_1 div:nth-child(7) {
+    grid-column: 2/3;
+  }
+  .grid2_1_1 div:nth-child(8) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .grid2_1_1 div:nth-child(11) {
+    grid-column: 2/3;
+  }
+  .grid2_1_1 div:nth-child(12) {
+    grid-column: 1/2;
+    grid-row: 6/7;
   }
 }
