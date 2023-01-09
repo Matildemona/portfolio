@@ -27,6 +27,10 @@ main {
   margin-inline: auto;
 }
 
+.spacedown {
+  margin-bottom: 55px;
+}
+
 /********** HEADER **********/
 
 header {
@@ -138,15 +142,13 @@ footer {
   font-size: 13px;
 }
 
-.img_matilde {
-  width: 126%;
-  margin-top: -127px;
+.matilde_open {
+  margin-top: -39px;
 }
 
 .matilde_closed {
-  width: 126%;
-  margin-top: -705px;
-  animation: close_eyes_kf 10s linear infinite both;
+  margin-top: -397px;
+  animation: close_eyes_kf 8s linear infinite both;
 }
 
 @keyframes close_eyes_kf {
@@ -214,17 +216,33 @@ footer {
   }
   .textbox1 {
     margin-left: 97px;
-    margin-top: 17px;
+    margin-top: 0;
   }
   .hackertext {
     margin-left: -22px;
     width: 361px;
     height: 550px;
   }
+  .hackertext2 {
+    margin-top: -532px;
+  }
+
+  .ogbillede {
+    margin-left: 241px;
+  }
+
+  .matilde_open {
+    margin-top: -27px;
+  }
+  .matilde_closed {
+    display: none;
+  }
 
   /********** GRID **********/
   .grid3_1_1 {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
   .grid2_1_1 {
     margin-left: 40px;
@@ -234,6 +252,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px 40px;
+    margin-top: 157px;
   }
 }
 
@@ -241,6 +260,8 @@ footer {
 @media (min-width: 1000px) {
   header {
     padding: 88px 149px;
+    margin-left: auto;
+    margin-right: auto;
   }
   li {
     margin-bottom: 0px;
@@ -250,6 +271,9 @@ footer {
     width: 400px;
     height: 600px;
   }
+  .hackertext2 {
+    margin-top: -557px;
+  }
   .img1 {
     background-image: url("webp/girl.webp");
     background-size: cover;
@@ -257,15 +281,47 @@ footer {
     margin-top: -192px;
     height: 646px;
   }
+  .toggle-btn {
+    display: none;
+  }
+  .main-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+    margin-right: 465px;
+  }
+  .spacedown {
+    margin: 0;
+  }
+  .matilde_open {
+    margin-top: -35px;
+    width: 78%;
+  }
+  .matilde_closed {
+    display: block;
+    width: 78%;
+    margin-top: -452px;
+  }
+  .ogbillede {
+    margin-left: 250px;
+  }
   /********** GRID **********/
-  .grid3_1_1 {
+
+  .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px 40px;
+    margin-top: 0;
   }
-  /*er dette nødvendigt eller gør den det autormatisk?*/
   .grid2_1_1 {
     grid-template-rows: 6fr;
+    gap: 70px 30px;
+  }
+  .grid3_1_1 {
+    gap: 50px 40px;
+    margin-top: -35px;
+    padding: 0;
   }
   /*jeg rykker rundt på de forksllige div'er, når vi er i laptop mode.
     nth er et givet tal der defineres i parentes.*/
@@ -289,14 +345,5 @@ footer {
   .grid2_1_1 div:nth-child(12) {
     grid-column: 1/2;
     grid-row: 6/7;
-  }
-  .toggle-btn {
-    display: none;
-  }
-  .main-menu ul {
-    display: contents;
-    display: flex;
-    list-style: none;
-    gap: 60px;
   }
 }
