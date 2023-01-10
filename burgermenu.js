@@ -1,27 +1,23 @@
-// Lav variablen "btn", der henviser til ".toggle-btn"
+// Jeg laver variablen btn der indeholder bindeled til classen .toggle-btn
 const btn = document.querySelector(".toggle-btn");
-// Lav variablen "menu", der henviser til ".main-menu"
+// Jeg laver variablen menu der indeholder bindeled til classen .main-menu
 const menu = document.querySelector(".main-menu");
 
-// Lav funktionen "toggleMenu()" med følgende funktionalitet
 function toggleMenu() {
-  // a) toggle klassen "shown" på menu vha. classList.toggle
+  // jeg tilføjer classen shown med en toggle funktion på variablen menu.
   menu.classList.toggle("shown");
 
-  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+  // Jeg laver en ny variabel der tjekker om shown er på menu
   const menuShown = menu.classList.contains("shown");
 
-  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
+  // Hvis shown er på menu sæt teksten til Luk
   if (menuShown) {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Luk", hvis menuShown er "true"
     btn.textContent = "Luk";
   } else {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Menu", hvis menuShown er "false"
+    // i andre tilfælde sæt teksten til Menu
     btn.textContent = "Menu";
   }
 }
 
-// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
+// Til sidste tilføjer jeg et click event til btn der starter funktionen toggleMenu
 btn.addEventListener("click", toggleMenu);

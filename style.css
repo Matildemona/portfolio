@@ -1,4 +1,5 @@
 /********** RESET **********/
+/* Jeg fjerner den style der automatisk bliver tilføjet fra starten af */
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +13,15 @@ img {
 }
 
 /********** STYLE **********/
-
+/*Jeg sætter nogle rammer op for sidens design ved at starte med at sætte det på body*/
 body {
   background-color: #101010;
-  color: white;
+  color: #e3eef2;
   font-family: "IBM Plex Mono", monospace;
   background-image: url("webp/bg.webp");
   background-repeat: no-repeat;
 }
 
-/* Ret senere */
 main {
   max-width: 1200px;
   margin-inline: auto;
@@ -49,27 +49,45 @@ li {
 /********** TEXT **********/
 h1,
 h2,
-h3,
-p {
+h3 {
   color: #36f3e4;
 }
+
 h1 {
   font-size: 6rem;
 }
+
 h2 {
   font-size: 1.7rem;
   margin-bottom: 20px;
 }
+
 h3 {
   font-size: 1.1rem;
 }
+
 p {
   color: #e3eef2;
   font-size: 1rem;
 }
+
 ul.inside li {
   list-style: inside;
 }
+
+.textbox1 {
+  margin-left: 4px;
+  margin-top: 197px;
+}
+
+.offsetright {
+  margin-left: 140px;
+}
+
+.offsetright2 {
+  margin-left: 274px;
+}
+
 /*************** KNAP ***************/
 .knap a {
   display: inline-block;
@@ -79,15 +97,10 @@ ul.inside li {
   color: black;
   font-size: 1.4rem;
   text-decoration: none;
-  text-align: center;
-  font-family: "IBM Plex Mono", monospace;
 }
 
 .knap a:hover {
   animation: fadelight_kf 5s linear infinite both;
-}
-a {
-  color: rgb(0, 255, 110);
 }
 
 @keyframes fadelight_kf {
@@ -106,7 +119,10 @@ a {
   }
 }
 
-.grid2_1_1 div a {
+a {
+  color: rgb(0, 255, 110);
+}
+.grid2_1_1 a {
   margin-top: 20px;
 }
 
@@ -123,19 +139,18 @@ a {
   margin-top: -606px;
 }
 
-/*************** FOOTER ***************/
-footer {
-  text-align: center;
-  font-family: "IBM Plex Mono", monospace;
-  color: rgb(55, 55, 55);
-  padding-bottom: 10px;
-  padding-top: 20px;
-  font-size: 0.9rem;
+/*************** IMG ***************/
+.grid2_1_1 img {
+  border-radius: 50px;
 }
 
-/*************** IMG ***************/
-.grid2_1_1 div img {
-  border-radius: 50px;
+.img1 {
+  background-image: url("webp/girl.webp");
+  background-size: cover;
+  width: 317px;
+  margin-top: -469px;
+  height: 554px;
+  margin-left: 136px;
 }
 
 .ogbillede {
@@ -171,9 +186,20 @@ footer {
   }
 }
 
+/*************** FOOTER ***************/
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 18px;
+}
+
+footer p {
+  color: rgb(55, 55, 55);
+  font-size: 0.9rem;
+}
+
 /********** BURGER MENU **********/
 .toggle-btn {
-  display: block;
   border: none;
   cursor: pointer;
   padding: 15px;
@@ -184,24 +210,18 @@ footer {
   font-family: "IBM Plex Mono", monospace;
   list-style: none;
 }
-
-.main-menu.shown {
-  display: contents;
-}
-
+/*jeg gemmer laptop menuen når vi er i mobil/tablet tilstand*/
 .main-menu ul {
   display: none;
 }
 
+/*styler hvordan mobil/tablet menuen ser ud når den er åben*/
 .main-menu.shown ul {
   border-top: 2px solid #e3eef2;
   padding-top: 9px;
   margin-top: 9px;
   display: flex;
   flex-flow: column;
-}
-
-@media (min-width: 800px) {
 }
 
 /********** MEDIA QUERY **********/
@@ -239,20 +259,21 @@ footer {
   }
 
   /********** GRID **********/
-  .grid3_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-  .grid2_1_1 {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+  /*i tablet tilstand tilføjer jeg grid-template-columns på forside og om mig side*/
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px 40px;
     margin-top: 157px;
+  }
+  .grid2_1_1 {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .grid3_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -260,8 +281,6 @@ footer {
 @media (min-width: 1000px) {
   header {
     padding: 88px 149px;
-    margin-left: auto;
-    margin-right: auto;
   }
   li {
     margin-bottom: 0px;
@@ -275,12 +294,11 @@ footer {
     margin-top: -557px;
   }
   .img1 {
-    background-image: url("webp/girl.webp");
-    background-size: cover;
     width: 716px;
     margin-top: -192px;
     height: 646px;
   }
+  /*i laptop tilstand fjerne jeg burgermenu knappen*/
   .toggle-btn {
     display: none;
   }
@@ -306,8 +324,8 @@ footer {
   .ogbillede {
     margin-left: 250px;
   }
-  /********** GRID **********/
 
+  /********** GRID **********/
   .grid_1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -315,7 +333,7 @@ footer {
     margin-top: 0;
   }
   .grid2_1_1 {
-    grid-template-rows: 6fr;
+    grid-template-columns: 1fr 1fr;
     gap: 70px 30px;
   }
   .grid3_1_1 {
